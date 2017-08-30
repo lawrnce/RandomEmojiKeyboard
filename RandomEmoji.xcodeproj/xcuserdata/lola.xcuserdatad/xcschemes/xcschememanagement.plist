@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>RandomEmojiKeyboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>E6BB73C01F567A5C00DDB30B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6BB73D31F567B4600DDB30B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

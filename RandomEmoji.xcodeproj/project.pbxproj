@@ -14,6 +14,11 @@
 		E6BB73B81F567A5B00DDB30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6BB73B71F567A5B00DDB30B /* Assets.xcassets */; };
 		E6BB73BB1F567A5B00DDB30B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6BB73B91F567A5B00DDB30B /* LaunchScreen.storyboard */; };
 		E6BB73C61F567A5C00DDB30B /* RandomEmojiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BB73C51F567A5C00DDB30B /* RandomEmojiTests.m */; };
+		E6BB73D81F567B4600DDB30B /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BB73D71F567B4600DDB30B /* KeyboardViewController.m */; };
+		E6BB73DC1F567B4600DDB30B /* RandomEmojiKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E6BB73D41F567B4600DDB30B /* RandomEmojiKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E6BB73E41F567B8D00DDB30B /* REKEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BB73E21F567B8D00DDB30B /* REKEmoji.m */; };
+		E6BB73EE1F56B30100DDB30B /* EmojiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB73ED1F56B30100DDB30B /* EmojiData.swift */; };
+		E6BB73EF1F56B30100DDB30B /* EmojiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB73ED1F56B30100DDB30B /* EmojiData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +29,28 @@
 			remoteGlobalIDString = E6BB73A71F567A5B00DDB30B;
 			remoteInfo = RandomEmoji;
 		};
+		E6BB73DA1F567B4600DDB30B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6BB73A01F567A5B00DDB30B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6BB73D31F567B4600DDB30B;
+			remoteInfo = RandomEmojiKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E6BB73E01F567B4600DDB30B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E6BB73DC1F567B4600DDB30B /* RandomEmojiKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E6BB73A81F567A5B00DDB30B /* RandomEmoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomEmoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +66,15 @@
 		E6BB73C11F567A5C00DDB30B /* RandomEmojiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomEmojiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BB73C51F567A5C00DDB30B /* RandomEmojiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomEmojiTests.m; sourceTree = "<group>"; };
 		E6BB73C71F567A5C00DDB30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6BB73D41F567B4600DDB30B /* RandomEmojiKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RandomEmojiKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BB73D61F567B4600DDB30B /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		E6BB73D71F567B4600DDB30B /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		E6BB73D91F567B4600DDB30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6BB73E11F567B8D00DDB30B /* REKEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REKEmoji.h; sourceTree = "<group>"; };
+		E6BB73E21F567B8D00DDB30B /* REKEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REKEmoji.m; sourceTree = "<group>"; };
+		E6BB73E51F56815D00DDB30B /* RandomEmoji-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomEmoji-Bridging-Header.h"; sourceTree = "<group>"; };
+		E6BB73E61F56815D00DDB30B /* RandomEmojiKeyboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomEmojiKeyboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		E6BB73ED1F56B30100DDB30B /* EmojiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +92,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6BB73D11F567B4600DDB30B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +107,7 @@
 			children = (
 				E6BB73AA1F567A5B00DDB30B /* RandomEmoji */,
 				E6BB73C41F567A5C00DDB30B /* RandomEmojiTests */,
+				E6BB73D51F567B4600DDB30B /* RandomEmojiKeyboard */,
 				E6BB73A91F567A5B00DDB30B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +117,7 @@
 			children = (
 				E6BB73A81F567A5B00DDB30B /* RandomEmoji.app */,
 				E6BB73C11F567A5C00DDB30B /* RandomEmojiTests.xctest */,
+				E6BB73D41F567B4600DDB30B /* RandomEmojiKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,11 +129,16 @@
 				E6BB73AF1F567A5B00DDB30B /* AppDelegate.m */,
 				E6BB73B11F567A5B00DDB30B /* ViewController.h */,
 				E6BB73B21F567A5B00DDB30B /* ViewController.m */,
+				E6BB73E11F567B8D00DDB30B /* REKEmoji.h */,
+				E6BB73E21F567B8D00DDB30B /* REKEmoji.m */,
+				E6BB73ED1F56B30100DDB30B /* EmojiData.swift */,
 				E6BB73B41F567A5B00DDB30B /* Main.storyboard */,
 				E6BB73B71F567A5B00DDB30B /* Assets.xcassets */,
 				E6BB73B91F567A5B00DDB30B /* LaunchScreen.storyboard */,
 				E6BB73BC1F567A5B00DDB30B /* Info.plist */,
 				E6BB73AB1F567A5B00DDB30B /* Supporting Files */,
+				E6BB73E51F56815D00DDB30B /* RandomEmoji-Bridging-Header.h */,
+				E6BB73E61F56815D00DDB30B /* RandomEmojiKeyboard-Bridging-Header.h */,
 			);
 			path = RandomEmoji;
 			sourceTree = "<group>";
@@ -111,6 +160,16 @@
 			path = RandomEmojiTests;
 			sourceTree = "<group>";
 		};
+		E6BB73D51F567B4600DDB30B /* RandomEmojiKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E6BB73D61F567B4600DDB30B /* KeyboardViewController.h */,
+				E6BB73D71F567B4600DDB30B /* KeyboardViewController.m */,
+				E6BB73D91F567B4600DDB30B /* Info.plist */,
+			);
+			path = RandomEmojiKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,10 +180,12 @@
 				E6BB73A41F567A5B00DDB30B /* Sources */,
 				E6BB73A51F567A5B00DDB30B /* Frameworks */,
 				E6BB73A61F567A5B00DDB30B /* Resources */,
+				E6BB73E01F567B4600DDB30B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E6BB73DB1F567B4600DDB30B /* PBXTargetDependency */,
 			);
 			name = RandomEmoji;
 			productName = RandomEmoji;
@@ -149,6 +210,23 @@
 			productReference = E6BB73C11F567A5C00DDB30B /* RandomEmojiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E6BB73D31F567B4600DDB30B /* RandomEmojiKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6BB73DD1F567B4600DDB30B /* Build configuration list for PBXNativeTarget "RandomEmojiKeyboard" */;
+			buildPhases = (
+				E6BB73D01F567B4600DDB30B /* Sources */,
+				E6BB73D11F567B4600DDB30B /* Frameworks */,
+				E6BB73D21F567B4600DDB30B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomEmojiKeyboard;
+			productName = RandomEmojiKeyboard;
+			productReference = E6BB73D41F567B4600DDB30B /* RandomEmojiKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,6 +239,7 @@
 					E6BB73A71F567A5B00DDB30B = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 4Q46H2YFBV;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					E6BB73C01F567A5C00DDB30B = {
@@ -168,6 +247,12 @@
 						DevelopmentTeam = 4Q46H2YFBV;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E6BB73A71F567A5B00DDB30B;
+					};
+					E6BB73D31F567B4600DDB30B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4Q46H2YFBV;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -186,6 +271,7 @@
 			targets = (
 				E6BB73A71F567A5B00DDB30B /* RandomEmoji */,
 				E6BB73C01F567A5C00DDB30B /* RandomEmojiTests */,
+				E6BB73D31F567B4600DDB30B /* RandomEmojiKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +294,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6BB73D21F567B4600DDB30B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -217,6 +310,7 @@
 			files = (
 				E6BB73B31F567A5B00DDB30B /* ViewController.m in Sources */,
 				E6BB73B01F567A5B00DDB30B /* AppDelegate.m in Sources */,
+				E6BB73EE1F56B30100DDB30B /* EmojiData.swift in Sources */,
 				E6BB73AD1F567A5B00DDB30B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +323,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6BB73D01F567B4600DDB30B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6BB73D81F567B4600DDB30B /* KeyboardViewController.m in Sources */,
+				E6BB73EF1F56B30100DDB30B /* EmojiData.swift in Sources */,
+				E6BB73E41F567B8D00DDB30B /* REKEmoji.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +340,11 @@
 			isa = PBXTargetDependency;
 			target = E6BB73A71F567A5B00DDB30B /* RandomEmoji */;
 			targetProxy = E6BB73C21F567A5C00DDB30B /* PBXContainerItemProxy */;
+		};
+		E6BB73DB1F567B4600DDB30B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6BB73D31F567B4600DDB30B /* RandomEmojiKeyboard */;
+			targetProxy = E6BB73DA1F567B4600DDB30B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -354,30 +463,42 @@
 		E6BB73CB1F567A5C00DDB30B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4Q46H2YFBV;
 				INFOPLIST_FILE = RandomEmoji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawrnce.RandomEmoji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomEmoji/RandomEmoji-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		E6BB73CC1F567A5C00DDB30B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4Q46H2YFBV;
 				INFOPLIST_FILE = RandomEmoji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawrnce.RandomEmoji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomEmoji/RandomEmoji-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		E6BB73CE1F567A5C00DDB30B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4Q46H2YFBV;
 				INFOPLIST_FILE = RandomEmojiTests/Info.plist;
@@ -391,6 +512,7 @@
 		E6BB73CF1F567A5C00DDB30B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4Q46H2YFBV;
 				INFOPLIST_FILE = RandomEmojiTests/Info.plist;
@@ -398,6 +520,39 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawrnce.RandomEmojiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandomEmoji.app/RandomEmoji";
+			};
+			name = Release;
+		};
+		E6BB73DE1F567B4600DDB30B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4Q46H2YFBV;
+				INFOPLIST_FILE = RandomEmojiKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawrnce.RandomEmoji.RandomEmojiKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomEmoji/RandomEmojiKeyboard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E6BB73DF1F567B4600DDB30B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4Q46H2YFBV;
+				INFOPLIST_FILE = RandomEmojiKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawrnce.RandomEmoji.RandomEmojiKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomEmoji/RandomEmojiKeyboard-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -420,12 +575,22 @@
 				E6BB73CC1F567A5C00DDB30B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6BB73CD1F567A5C00DDB30B /* Build configuration list for PBXNativeTarget "RandomEmojiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E6BB73CE1F567A5C00DDB30B /* Debug */,
 				E6BB73CF1F567A5C00DDB30B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6BB73DD1F567B4600DDB30B /* Build configuration list for PBXNativeTarget "RandomEmojiKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6BB73DE1F567B4600DDB30B /* Debug */,
+				E6BB73DF1F567B4600DDB30B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
