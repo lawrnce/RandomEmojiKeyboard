@@ -27,7 +27,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  [self setupLogo];
+//  [self setupLogo];
   [self setupEmojiButton];
   [self setupNextKeyboardButton];
   [self setupDeleteButton];
@@ -60,8 +60,8 @@
 - (void)setupLogo {
   
   self.logoLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-  [self.logoLabel setText:@"Random Emoji Keyboard"];
-  [self.logoLabel setFont:[UIFont boldSystemFontOfSize:10.0]];
+  [self.logoLabel setText:@"Random Emoji"];
+  [self.logoLabel setFont:[UIFont systemFontOfSize:12.0f weight:UIFontWeightUltraLight]];
   [self.logoLabel setAlpha:0.2f];
   [self.logoLabel sizeToFit];
   self.logoLabel.translatesAutoresizingMaskIntoConstraints = NO;
@@ -76,7 +76,7 @@
   
   self.emojiButton = [UIButton buttonWithType:UIButtonTypeSystem];
   [self.emojiButton setTitle:@"\U0001F602" forState:UIControlStateNormal];
-  [self.emojiButton.titleLabel setFont:[UIFont systemFontOfSize:102.0]];
+  [self.emojiButton.titleLabel setFont:[UIFont systemFontOfSize:95.0]];
   [self.emojiButton sizeToFit];
   self.emojiButton.translatesAutoresizingMaskIntoConstraints = NO;
   [self.emojiButton addTarget:self action:@selector(emojiButtonPressed) forControlEvents:UIControlEventTouchUpInside];
@@ -90,8 +90,8 @@
 - (void)setupDeleteButton {
   
   self.deleteButton = [UIButton buttonWithType:UIButtonTypeSystem];
-  [self.deleteButton setTitle:@"\U0001F697" forState:UIControlStateNormal];
-  [self.deleteButton.titleLabel setFont:[UIFont systemFontOfSize:30.0]];
+  [self.deleteButton setTitle:@"⌫" forState:UIControlStateNormal];
+  [self.deleteButton.titleLabel setFont:[UIFont systemFontOfSize:20.0]];
   [self.deleteButton sizeToFit];
   self.deleteButton.translatesAutoresizingMaskIntoConstraints = NO;
   [self.deleteButton addTarget:self action:@selector(deleteButtonPressed) forControlEvents:UIControlEventTouchUpInside];
